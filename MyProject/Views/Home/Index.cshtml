@@ -1,3 +1,14 @@
-﻿
+﻿@model User
 @{
 }
+
+<h1>Eneter Your Name and Email</h1>
+<div>
+    <form asp-action="display">
+        <label>Name:</label>
+        <input asp-for="Name" type="text"/>
+        <label>Email:</label>
+        <input asp-for="Email" type="text"/>
+        <button type="submit">Submit</button>
+    </form>
+</div>

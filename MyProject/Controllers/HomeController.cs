@@ -8,5 +8,9 @@ namespace MyProject.Controllers
         {
             return View();
         }
+        public IActionResult Dispaly(User model)
+        {
+            return View(model);
+        }
     }
 }
