@@ -1,14 +1,22 @@
 ﻿@model User
 @{
+    Layout = null;
 }
-
+<!DOCTYPE html>
+<html>
+<body>
 <h1>Eneter Your Name and Email</h1>
 <div>
     <form asp-action="display">
         <label>Name:</label>
         <input asp-for="Name" type="text"/>
+        <br />
         <label>Email:</label>
         <input asp-for="Email" type="text"/>
+        <br />
         <button type="submit">Submit</button>
     </form>
 </div>
+
+</body>
+</html>

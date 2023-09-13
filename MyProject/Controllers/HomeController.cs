@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MyProject.Models;
 
 namespace MyProject.Controllers
 {
@@ -8,7 +9,7 @@ namespace MyProject.Controllers
         {
             return View();
         }
-        public IActionResult Dispaly(User model)
+        public IActionResult display(User model)
         {
             return View(model);
         }
